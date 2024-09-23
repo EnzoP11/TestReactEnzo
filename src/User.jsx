@@ -1,12 +1,17 @@
 
 
 const User = () => {
+
+const myName = 'Enzo'
+const myLastName = 'Perriat'
+const myAge = 22
+const isAuthenticated = true
+
     return (
         <>
-        
-        <h1>Bonjour, mon nom est :</h1>
-        <h2>Enzo Perriat</h2>
-        <p>Je suis passionner de Rubik's Cube, d'échecs, et de jeux en tout genre</p>
+        {isAuthenticated === true ? <h1>Vous êtes connecté</h1> : <h1>Connectez vous</h1>}
+        <h1>Bonjour, mon prenom est {myName} et mon nom est {myLastName}</h1>
+        <p>Je suis passionner de Rubik's Cube, d'échecs, et de jeux en tout genre. J'ai {myAge} ans.</p>
         
         </>
     )
