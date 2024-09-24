@@ -1,6 +1,6 @@
 
 
-const User = (props) => {
+const User = (name, recordSingle, recordAverange, image) => {
 
 
 /*const myName = 'Enzo'
@@ -16,9 +16,9 @@ const isAuthenticated = true*/
         </>*/
         <>
         
-        <h1>Mon nom est {props.name}</h1>
-        <p>Mon meilleur temps au Rubiks Cube est : {props.recordSingle} et ma meilleur moyenne est : {props.recordAverange}</p>
-        <img src={props.image}/>
+        <h1>Mon nom est {name}</h1>
+        <p>Mon meilleur temps au Rubiks Cube est : {recordSingle} et ma meilleur moyenne est : {recordAverange}</p>
+        <img src={image}/>
         
         </>
     )
